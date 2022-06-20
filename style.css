@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.card img{
+    width:100%;
+}
+
+.card .swiper-slide h1{
+    padding:10px 0;
+}
+.card .swiper-slide p{
+    padding-bottom: 30px;
+}
+
+
+
+
+#news{
+    width:1200px;
+    margin:100px auto;
+    position: relative;
+    
+}
+.card{
+    
+    padding-bottom: 50px;
+}
+
+
+.swiper-button-prev {
+    left: -50px;
+    right: auto;
+}
+
+.swiper-button-next{
+    right: -50px;
+    left: auto;
+}
+/*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+.card .swiper-wrapper{
+    align-items: center;
+}
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.card .swiper-slide{
+    transform: scale(0.7);
+    opacity: 0.3;
+}
+.card .swiper-slide-prev, .card .swiper-slide-next{
+    transform: scale(0.85);
+    opacity: 0.5;
+}
+.card .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s;
+    
+    
+}
+.card .swiper-slide .text{
+    display: none;
+}
+
+.card .swiper-slide-active .text{
+    display: block;
+}
+
+/*불릿모양. swiper-pagination-bullet-active 클래스가 현재 색상이 들어간 부분 나타냄*/
+.swiper-pagination-bullet-active{
+    width:30px;
+    border-radius: 4px;
+    
+}
+.swiper-pagination-bullet{
+    background-color: #7e060b;
+}
